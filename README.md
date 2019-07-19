@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Let's Roll!
 
-## Available Scripts
+#### _React Week 3 and 4, Capstone Project, 7.19.19_
 
-In the project directory, you can run:
+#### By _**Ashley Jessica Ancheta**_
 
-### `npm start`
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This is an application that connects jiu jitsu practicioners, as well as people who are interested in starting jiu jitsu, to free open mat sessions in Portland, OR. Helping people perfect their craft.
 
-### `npm test`
+In the world of jiu jitsu, many academies will hold open mat sessions that are free of cost! These events take place at designated hours on a specific day, and having an application that holds that specific information can efficently connect people to a school in their vicinity. It is a community where people will "roll" (wrestle) with each other for fun. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+  * _React 16.8.6_
+  * _React-Redux 7.1.0_
+  * _Webpack 3.12.0_
+  * _React-Hot-Loader 3.1.3_
+  * _Babel 6.26.3_
+  * _eslint 4.19.1_
+  * _Material UI 4.0.0-rc.0_
+  * _JSX_
+  * _GraphQL_
+  * _Firebase_
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Component and Route Tree
+<p>
+<img src="src/assets/img/component-tree.png">
+</p>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Minimum Viable Product
+- [] Database of hours and locations of open mat sessions
+- [] Display user’s current location and location of school shown on a map
+- [] Accept user’s zip code and render nearby schools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Stretch Goals
+- [] User authentication
+- [] Live feed of comments if hours / location change 
+- [] Directions to jiu jitsu school from current location
 
-### `npm run eject`
+## Setup / Installation Requirements
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  ### To run the application run the following commands
+  * `cd desktop` Navigate to the desktop.
+  * `git clone "https://github.com/ajancheta/lets-roll.git"`
+  * `cd lets-roll` Clone this repository to your desktop. 
+  * `atom .` or `code .` Open the repository in a preferred text editor such as Atom or Visual Studio Code.
+  * `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
+  * `npm run start` in the project directory in Terminal. 
+  * Go to http://localhost:8080/ in the browser, preferably Google Chrome.
+  * Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Known Bugs
+There are no known bugs.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Support and contact details
+Should any problems occur, discover other bugs, or experience issues with viewing, please contact me at ashleyjancheta@gmail.com
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2019 **_Ashley J. Ancheta_**

@@ -9,9 +9,11 @@
 
 ## Description
 
-This is an application that connects jiu jitsu practicioners, as well as people who are interested in starting jiu jitsu, to free open mat sessions in Portland, OR. Helping people perfect their craft.
+Let's Roll is an application to help people perfect their craft. It connects Brazilian jiu jitsu practicioners, as well as people who are interested in starting jiu jitsu, to free open mat sessions in Portland, OR. 
 
-In the world of jiu jitsu, many academies will hold open mat sessions that are free of cost! These events take place at designated hours on a specific day, and having an application that holds that specific information can efficently connect people to a school in their vicinity. It is a community where people will "roll" (wrestle) with each other for fun. 
+In the world of jiu jitsu, to "roll" with someone means live sparring, which the most important part of Brazilian Jiu Jitsu. Many academies will hold "open mat", welcome to everyone of all levels and backgrounds, where people roll together at no cost! During the open mat the clock is set to 5 minutes (or more) for each round. These events take place at designated hours on a specific day, and having an application that holds that information can efficently connect people to a school in their vicinity. It invites not only the jiu jitsu community but people who are interested in the jiu jitsu culture. 
+
+
 
 ## Technologies Used
 
@@ -26,22 +28,7 @@ In the world of jiu jitsu, many academies will hold open mat sessions that are f
   * _GraphQL_
   * _Firebase_
 
-## Component and Route Tree
-<p>
-<img src="src/assets/img/component-tree.png">
-</p>
-
-## Minimum Viable Product
-- [] Database of hours and locations of open mat sessions
-- [] Display user’s current location and location of school shown on a map
-- [] Accept user’s zip code and render nearby schools
-
-### Stretch Goals
-- [] User authentication
-- [] Live feed of comments if hours / location change 
-- [] Directions to jiu jitsu school from current location
-
-## Setup / Installation Requirements
+  ## Setup / Installation Requirements
 
   ### To run the application run the following commands
   * `cd desktop` Navigate to the desktop.
@@ -53,11 +40,57 @@ In the world of jiu jitsu, many academies will hold open mat sessions that are f
   * Go to http://localhost:8080/ in the browser, preferably Google Chrome.
   * Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
+# Planning
+
+## User Stories
+### Target Users 
+* Users who train jiu jitsu 
+* Users who are interested in the jiu jitsu community / culture
+* Gym owners to expand their community 
+
+### User Stories
+| Behavior | Input | Output |
+| ------------- |:-------------:| ------------- |
+| User is welcomed with the landing page which prompts them to input a zip code and app will display nearby schools | "97239" |  "Nemesis Jiu Jitsu, Portland Judo / BJJ, Enzo Jiu Jitsu"|
+| User selects a school that the app will list | User selects "Nemesis Jiu Jitsu" | App will take the user to details about Nemesis Jiu Jitsu |
+| On the school detail page, user will select the map for directions | *User taps on map* | App will redirect user to Google Maps and directions will display |
+
+## Component and Route Layout
+<p>
+<img src="src/assets/img/component-tree.png" align="center" height="410" width="390">
+</p>
+
+## Sketch
+<p>
+<img src="src/assets/img/sketch.png" align="center" height="450" width="350">
+</p>
+
+### Minimum Viable Product
+- [] Database of hours and locations of open mat sessions
+- [] Display user’s current location and location of school shown on a map
+- [] Accept user’s zip code and render nearby schools
+
+### Stretch Goals
+- [] User authentication
+- [] Live feed of comments if hours / location change 
+- [] Directions to jiu jitsu school from current location
+- [] Search bar to navigate to specific school details
+
+### Commit History / Activity Log
+_Friday, July 19 - Planning_
+* 8:00 - Create initial application files and folders & start README.
+* 9:00 - Break down app into UI component hierarchy and create component tree.
+* 10:30 - Update README to reflect component tree and consider what technologies will be used.
+* 1:00 - Create sketch layout of the application.
+* 2:00 - Create user stories and write out behavioral specs.
+* 3:00 - List MVP and additional features to be added if MVP is met.
+* 3:45 - Conduct research on jiu jitsu schools in Portland, OR and start to build out custom database. 
+* 4:00 - Clean up README. Done for the day. 
 
 ## Known Bugs
 There are no known bugs.
 
 ## Support and contact details
-Should any problems occur, discover other bugs, or experience issues with viewing, please contact me at ashleyjancheta@gmail.com
+Please contact me at ashleyjancheta@gmail.com
 
 Copyright (c) 2019 **_Ashley J. Ancheta_**

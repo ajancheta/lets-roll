@@ -9,10 +9,9 @@
 
 ## Description
 
-Let's Roll is an application to help people perfect their craft. It connects Brazilian jiu jitsu practicioners, as well as people who are interested in starting jiu jitsu, to free open mat sessions in Portland, OR. 
+Let's Roll is an application to help people perfect their craft. It efficently connects Brazilian jiu jitsu practicioners, as well as people who are interested in starting jiu jitsu, to free open mat sessions in Portland, OR. 
 
-In the world of jiu jitsu, to "roll" with someone means live sparring, which the most important part of Brazilian Jiu Jitsu. Many academies will hold "open mat", welcome to everyone of all levels and backgrounds, where people roll together at no cost! During the open mat the clock is set to 5 minutes (or more) for each round. These events take place at designated hours on a specific day, and having an application that holds that information can efficently connect people to a school in their vicinity. It invites not only the jiu jitsu community but people who are interested in the jiu jitsu culture. 
-
+In the world of jiu jitsu, to "roll" with someone means live sparring, which is the most important part of Brazilian Jiu Jitsu. Many academies will hold "open mat", welcome to everyone of all levels and backgrounds, where people roll together at no cost! During the open mat the clock is set to 5 minutes (or more) for each round. It not only invites the jiu jitsu community but people who are interested in the jiu jitsu culture as well!
 
 
 ## Technologies Used
@@ -63,6 +62,11 @@ In the world of jiu jitsu, to "roll" with someone means live sparring, which the
 ## Sketch
 <p>
 <img src="src/assets/img/sketch.png" align="center" height="450" width="350">
+</p>
+
+## Wireframming
+<p>
+<img src="src/assets/img/wireframe.png" align="center">
 </p>
 
 ### Minimum Viable Product

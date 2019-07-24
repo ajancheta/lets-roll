@@ -66,7 +66,8 @@ In the world of jiu jitsu, to "roll" with someone means live sparring, which is 
 
 ## Wireframming
 <p>
-<img src="src/assets/img/wireframe.png" align="center">
+<img src="src/assets/img/wireframe1.png" align="center">
+<img src="src/assets/img/wireframe2.png" align="center">
 </p>
 
 ### Minimum Viable Product

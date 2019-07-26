@@ -1,0 +1,38 @@
+.splash-container {
+  border: 1px solid green;
+  padding: 5%;
+  margin-top: 20%;
+}
+
+.intro-container {
+  border: 1px solid blue;
+  align-items: center;
+}
+
+.photo-container img {
+  width: 300px;
+  height: auto;
+}
+
+.photo-container {
+  display: block;
+  position: relative;
+}
+
+.text-container {
+  border: 1px solid red;
+  background-color: #fff;
+  width: 310px;
+  height: auto;
+  padding: 1%;
+  top: 40%;
+  right: 5%;
+  position: absolute;
+}
+
+.text-container p {
+  text-align: right;
+  font-family: 'Alegreya', serif;
+  color: #E4B94A;
+  letter-spacing: 2px;
+}

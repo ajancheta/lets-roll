@@ -23,6 +23,10 @@ const useStyles = makeStyles(theme => ({
     zIndex: '1',
     float: 'none',
     fontFamily: 'Montserrat',
+    display: 'flex',
+  },
+  paper: {
+    marginRight: theme.spacing(2),
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -35,8 +39,24 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
+
 export default function ButtonAppBar() {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const anchorRef = React.useRef(null);
+
+  function handleToggle() {
+    setOpen(prevOpen => !prevOpen);
+  }
+  
+  function handleClose(event) {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+  
+    setOpen(false);
+  }
 
   return (
     <div className={classes.root}>
@@ -44,7 +64,7 @@ export default function ButtonAppBar() {
         <Toolbar>
 
           <IconButton 
-          edge="start" 
+          // edge="start" 
           className={classes.menuButton} 
           color="inherit"
           ref={anchorRef}
@@ -73,8 +93,13 @@ export default function ButtonAppBar() {
                 </ClickAwayListener>
               </Paper>
             </Grow>
-          
-          <Typography color="inherit" variant="p" className={classes.homeButton}>
+          )}
+          </Popper>
+          <Typography 
+          color="inherit" 
+          variant="p" 
+          className={classes.homeButton}
+          >
             Let's Roll
           </Typography>
         </Toolbar>

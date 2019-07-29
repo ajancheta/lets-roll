@@ -4,17 +4,19 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import Grow from '@material-ui/core/Grow';
-import Paper from '@material-ui/core/Paper';
-import Popper from '@material-ui/core/Popper';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles(theme => ({
-
   root: {
     backgroundColor: '#4C8A8E',
     boxShadow: 'none',
@@ -24,6 +26,12 @@ const useStyles = makeStyles(theme => ({
     float: 'none',
     fontFamily: 'Montserrat',
     display: 'flex',
+  },
+  list: {
+    width: 250,
+    height: 'auto',
+    color: '#4C8A8E',
+    textTransform: 'uppercase',
   },
   paper: {
     marginRight: theme.spacing(2),
@@ -37,27 +45,56 @@ const useStyles = makeStyles(theme => ({
     fontSize: '20px',
     lineHeight: '18px',
   },
+  clicked: {
+    color: '#4C8A8E',
+    textDecoration: 'none',
+    '&:hover': {
+      color: '#4C8A8E',
+    },
+    '&:active': {
+      color: '#4C8A8E',
+    },
+  },
 }));
 
 
 
 export default function ButtonAppBar() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const anchorRef = React.useRef(null);
-
-  function handleToggle() {
-    setOpen(prevOpen => !prevOpen);
-  }
+  const [state,setState] = React.useState ({
+    left: false
+  })
   
-  function handleClose(event) {
-    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+  const toggleDrawer = (side, open) => event => {
+    if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
-    }
-  
-    setOpen(false);
   }
+  setState({ ...state, [side]: open });
+  };
 
+  const sideList = side => (
+    <div
+      className={classes.list}
+      role="presentation"
+      onClick={toggleDrawer(side, false)}
+      onKeyDown={toggleDrawer(side, false)}
+    >
+      <List>
+        {[
+          <Link to="/" style={{ textDecoration: 'none' }}><span className={classes.clicked}>Home</span></Link>,
+          <Link to="/about" style={{ textDecoration: 'none' }}><span className={classes.clicked}>About</span></Link>,
+          'Getting Started', 
+          'Locations', 
+          'Map', 
+          'Comments'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+      </List>
+    </div>
+  );
+  
   return (
     <div className={classes.root}>
       <AppBar className={classes.root}>
@@ -67,34 +104,20 @@ export default function ButtonAppBar() {
           // edge="start" 
           className={classes.menuButton} 
           color="inherit"
-          ref={anchorRef}
-          aria-controls="menu-list-grow"
-          aria-haspopup="true"
-          onClick={handleToggle}
+          onClick={toggleDrawer('left', true)}
           >
             <MenuIcon />
           </IconButton>
 
-        <Popper open={open} anchorEl={anchorRef.current} keepMounted transition disablePortal>
-          {({ TransitionProps, placement }) => (
-            <Grow
-              {...TransitionProps}
-              style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-            >
-              <Paper id="menu-list-grow">
-                <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList>
-                    <MenuItem onClick={handleClose}>About</MenuItem>
-                    <MenuItem onClick={handleClose}>Getting Started</MenuItem>
-                    <MenuItem onClick={handleClose}>Locations</MenuItem>
-                    <MenuItem onClick={handleClose}>Map</MenuItem>
-                    <MenuItem onClick={handleClose}>Comments</MenuItem>
-                  </MenuList>
-                </ClickAwayListener>
-              </Paper>
-            </Grow>
-          )}
-          </Popper>
+
+          <SwipeableDrawer
+            open={state.left}
+            onClose={toggleDrawer('left', false)}
+            onOpen={toggleDrawer('left', true)}
+          >
+            {sideList('left')}
+          </SwipeableDrawer>
+
           <Typography 
           color="inherit" 
           variant="p" 

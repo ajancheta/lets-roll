@@ -9,7 +9,7 @@ function Location(props) {
     <div className="location-container">
       <div className="current-locations-text-container">
         <div className="location-details-container">
-        <Link to="/" style={{textDecoration: 'none'}}>
+        <Link to="/location-details" style={{textDecoration: 'none'}}>
           <div className="location-details">
             <h3>{props.name}</h3>
             <h4>{props.address}</h4>

@@ -23,7 +23,7 @@ function LocationDetails(props) {
         </div>
 
         <div className="map-container">
-          
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7459.307982436473!2d-122.68815686978517!3d45.525492735342596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a1d719ca4c1%3A0xef64592e858432b2!2sNemesis+Jiu+Jitsu!5e0!3m2!1sen!2sus!4v1564671859965!5m2!1sen!2sus" style={{width:"400", height:"450",frameborder:"0", border: 'none' }}allowfullscreen></iframe>
         </div>
       </div>
     </div>

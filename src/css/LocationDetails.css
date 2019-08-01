@@ -3,7 +3,7 @@
 }
 
 .details-text-container {
-  padding: 6%;
+  /* padding: 6%; */
 }
 
 .details-text {
@@ -31,4 +31,8 @@
   width: auto;
   height: 20px;
   margin-right: 2%;
+}
+
+.map-container {
+  align-items: center;
 }

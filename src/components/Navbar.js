@@ -7,32 +7,24 @@ import Button from '@material-ui/core/Button';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import NavLinks from './NavLinks';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    backgroundColor: '#4C8A8E',
     boxShadow: 'none',
-    fix: 'absolute',
+    backgroundColor: '#fff',
+    color: '#4C8A8E',
     position: 'fixed',
+    margin: '0',
     zIndex: '1',
     float: 'none',
     fontFamily: 'Montserrat',
     display: 'flex',
-  },
-  list: {
-    width: 250,
-    height: 'auto',
-    color: '#4C8A8E',
-    textTransform: 'uppercase',
   },
   paper: {
     marginRight: theme.spacing(2),
@@ -42,9 +34,9 @@ const useStyles = makeStyles(theme => ({
   },
   homeButton: {
     textTransform: 'uppercase',
-    fontSize: '18px',
-    lineHeight: '8px',
-    letterSpacing: '2px',
+    fontSize: '16px',
+    lineHeight: '3px',
+    letterSpacing: '1px',
   },
   clicked: {
     color: '#4C8A8E',
@@ -60,6 +52,7 @@ const useStyles = makeStyles(theme => ({
     height: '100%',
     backgroundColor: '#4C8A8E',
     color: '#fff',
+    textTransform: 'uppercase',
   },
 }));
 
@@ -99,7 +92,7 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar className={classes.root}>
         <Toolbar>
-          <Grid item xs={10}>
+          <Grid item xs={9}>
             <IconButton 
             // edge="start" 
             className={classes.menuButton} 
@@ -110,7 +103,7 @@ export default function ButtonAppBar() {
             </IconButton>
           </Grid>
 
-          <Grid item xs={2}>
+          <Grid item xs={3}>
             <Typography 
             color="inherit" 
             variant="p" 

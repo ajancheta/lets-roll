@@ -1,0 +1,34 @@
+.details-container {
+  padding: 0;
+}
+
+.details-text-container {
+  padding: 6%;
+}
+
+.details-text {
+  color: #4C8A8E;
+  text-align: center;
+}
+
+.details-text h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.open-mat {
+  font-weight: 900;
+}
+
+.address-detail {
+  font-size: 1em;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.address-detail img {
+  width: auto;
+  height: 20px;
+  margin-right: 2%;
+}

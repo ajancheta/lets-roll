@@ -27,10 +27,6 @@ function Location(props) {
   );
 }
 
-
-
-
-
 Location.propTypes = {
   name: PropTypes.string,
   address: PropTypes.string,

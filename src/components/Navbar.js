@@ -14,7 +14,8 @@ import MenuList from '@material-ui/core/MenuList';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
-
+import Grid from '@material-ui/core/Grid';
+import NavLinks from './NavLinks';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -40,10 +41,10 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   homeButton: {
-    marginLeft: '91%',
     textTransform: 'uppercase',
-    fontSize: '20px',
-    lineHeight: '18px',
+    fontSize: '18px',
+    lineHeight: '8px',
+    letterSpacing: '2px',
   },
   clicked: {
     color: '#4C8A8E',
@@ -55,9 +56,12 @@ const useStyles = makeStyles(theme => ({
       color: '#4C8A8E',
     },
   },
+  list: {
+    height: '100%',
+    backgroundColor: '#4C8A8E',
+    color: '#fff',
+  },
 }));
-
-
 
 export default function ButtonAppBar() {
   const classes = useStyles();
@@ -81,12 +85,8 @@ export default function ButtonAppBar() {
     >
       <List>
         {[
-          <Link to="/" style={{ textDecoration: 'none' }}><span className={classes.clicked}>Home</span></Link>,
-          <Link to="/about" style={{ textDecoration: 'none' }}><span className={classes.clicked}>About</span></Link>,
-          'Getting Started', 
-          'Locations', 
-          'Map', 
-          'Comments'].map((text, index) => (
+          <NavLinks />
+        ].map((text, index) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
@@ -99,16 +99,26 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar className={classes.root}>
         <Toolbar>
+          <Grid item xs={10}>
+            <IconButton 
+            // edge="start" 
+            className={classes.menuButton} 
+            color="inherit"
+            onClick={toggleDrawer('left', true)}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Grid>
 
-          <IconButton 
-          // edge="start" 
-          className={classes.menuButton} 
-          color="inherit"
-          onClick={toggleDrawer('left', true)}
-          >
-            <MenuIcon />
-          </IconButton>
-
+          <Grid item xs={2}>
+            <Typography 
+            color="inherit" 
+            variant="p" 
+            className={classes.homeButton}
+            >
+              Let's Ro<em>ll</em>
+            </Typography>
+          </Grid>
 
           <SwipeableDrawer
             open={state.left}
@@ -117,14 +127,6 @@ export default function ButtonAppBar() {
           >
             {sideList('left')}
           </SwipeableDrawer>
-
-          <Typography 
-          color="inherit" 
-          variant="p" 
-          className={classes.homeButton}
-          >
-            Let's Roll
-          </Typography>
         </Toolbar>
       </AppBar>
     </div>

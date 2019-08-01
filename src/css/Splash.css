@@ -1,6 +1,5 @@
 .splash-container {
-  padding: 5%;
-  margin-top: 20%;
+  margin-top: 14%;
 }
 
 .intro-container {
@@ -8,8 +7,8 @@
 }
 
 .photo-container img {
-  width: 300px;
-  height: auto;
+  width: 380px;
+  height: 580px;
 }
 
 .photo-container {
@@ -17,37 +16,11 @@
   position: relative;
 }
 
-.text-container {
-  background-color: #fff;
-  width: 310px;
-  height: auto;
-  padding: 1%;
-  top: 40%;
-  right: 5%;
-  position: absolute;
-}
-
-.text-container p {
-  text-align: right;
-  font-family: 'Alegreya', serif;
-  color: #E4B94A;
-  letter-spacing: 2px;
-}
-
-.form-title {
-  color: #4C8A8E;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  text-transform: uppercase;
-}
 
 .form-container {
+  flex-flow: column;
   align-items: center;
   display: flex;
-}
-.button {
-  margin: theme-spacing(1);
-  background-color: #4C8A8E !important;
-
+  margin-top: -40%;
+  margin-left: 40%;
 }

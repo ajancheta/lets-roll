@@ -1,0 +1,122 @@
+{
+  "locations": [
+    {
+      "id": "1",
+      "name": "Nemesis Jiu Jitsu",
+      "address": "635 NW 16th Ave, Portland, OR 97209",
+      "day": "Sunday",
+      "hours": "10 AM to 11 AM",
+      "website": "http://www.nemesisbjj.com/",
+      "IG": "@nemesisbjj"
+    },
+    {
+      "id": "2",
+      "name": "PDX BJJ",
+      "address": "2335 NW 23rd Pl, Portland, OR 97210",
+      "day": "Friday",
+      "hours": "7:30 PM to 8:30 PM",
+      "website": "http://www.pdxbjj.com/",
+      "IG": "@pdxbjj"
+    },
+    {
+      "id": "3",
+      "name": "Eastside Grappling",
+      "address": "210 SE Madison St, Portland, OR 97214",
+      "day": "Sunday",
+      "hours": "10 AM to 11 AM",
+      "website": "www.eastsidegrappling.com/",
+      "IG": "@eastsidegrappling"
+    },
+    {
+      "id": "4",
+      "name": "10th Planet Portland",
+      "address": "1735 SE Grand Ave, Portland, OR 97214",
+      "day": "Friday",
+      "hours": "6 PM to 8 PM",
+      "website": "www.10thplanetportland.com/",
+      "IG": "@10thplanetportland"
+    },
+    {
+      "id": "5",
+      "name": "Alive MMA",
+      "address": "5607 SE Woodstock Blvd, Portland, OR 97206",
+      "day": "Sunday",
+      "hours": "11 AM to 1 PM",
+      "website": "www.alivemma.dreamhosters.com/",
+      "IG": "n/a"
+    },
+    {
+      "id": "6",
+      "name": "Enso Jiu Jitsu",
+      "address": "517 Main Street, Unit B, Oregon City, OR 97045",
+      "day": "Sunday",
+      "hours": "7 PM to 8 PM",
+      "website": "https://www.ensojj.com/",
+      "IG": "@ensojiujitsu"
+    },
+    {
+      "id": "7",
+      "name": "Portland Thai Boxing & Martial Arts",
+      "address": "600 NE Couch St, Portland, OR 97232",
+      "day": "Tuesday",
+      "hours": "6:30 PM to 7:30 PM",
+      "website": "https://www.pdxmuaythai.com/",
+      "IG": "@pdxmuaythai"
+    },
+    {
+      "id": "8",
+      "name": "Mata Leo Combat Sports",
+      "address": "1115 SE Stephens St, Portland, OR 97214",
+      "day": "Sunday",
+      "hours": "12 PM to 2 PM",
+      "website": "http://www.mataleaocs.com/",
+      "IG": "n/a"
+    },
+    {
+      "id": "9",
+      "name": "Caio Terra Academy Hillsboro",
+      "address": "2020 NW Aloclek Dr #105, Hillsboro, OR 97124",
+      "day": "Sunday",
+      "hours": "1 PM to 2 PM",
+      "website": "https://oregonbjj.com/",
+      "IG": "@caioterrabjj"
+    },
+    {
+      "id": "10",
+      "name": "Unicorn Jiu Jitsu",
+      "address": "8502 SE Stark Street, Portland, OR 97216",
+      "day": "Saturday",
+      "hours": "12:30 PM to 2 PM",
+      "website": "https://www.unicornjiujitsu.com/",
+      "IG": "@unicornjiujitsupdx"
+    },
+    {
+      "id": "11",
+      "name": "Anibal Lobo Jiu-Jitsu Academy",
+      "address": "839 East Powell Boulevard, Gresham, OR 97030",
+      "day": "Sunday",
+      "hours": "12 PM to 1 PM",
+      "website": "https://lobojiujitsu.com/",
+      "IG": "@lobo_bjj"
+    },
+    {
+      "id": "12",
+      "name": "Emerge BJJ",
+      "address": "12209 NE Fourth Plain Blvd, Vancouver, WA 98682",
+      "day": "Sunday",
+      "hours": "5 PM to 7 PM",
+      "website": "https://emergebjj.com/",
+      "IG": "@emergejiujitsu"
+    },
+    {
+      "id": "13",
+      "name": "The Base Vancouver",
+      "address": "4707 NE Minnehaha St, Vancouver, WA 98661",
+      "day": "",
+      "hours": "",
+      "website": "https://www.thebasevancouver.com/",
+      "IG": "@thebasevancouver"
+    }
+  ]
+ }
+ 

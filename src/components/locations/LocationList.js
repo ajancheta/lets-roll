@@ -8,7 +8,7 @@ const LocationList = ({locations}) => {
         <div>
             { locations && locations.map(location => {
                return (
-                   <LocationSummary location={location} key={location.id} />>
+                    <LocationSummary location={location} key={location.id} />
                )
             })}
         </div>

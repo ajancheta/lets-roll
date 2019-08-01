@@ -7,6 +7,10 @@ const initState = {
 }
 
 const locationReducer = (state = initState, action) => {
+    switch(action.type) {
+        case 'CREATE_LOCATION':
+            console.log('created project', action.project)
+    }
     return state
 }
 

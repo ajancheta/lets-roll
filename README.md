@@ -71,7 +71,7 @@ In the world of jiu jitsu, to "roll" with someone means live sparring, which is 
 </p>
 
 ### Minimum Viable Product
-- [] Database of hours and locations of open mat sessions
+- [x] Database of hours and locations of open mat sessions
 - [] Display user’s current location and location of school shown on a map
 - [] Accept user’s zip code and render nearby schools
 

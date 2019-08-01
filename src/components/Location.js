@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../css/Location.css';
 import { Link } from 'react-router-dom';
+import Arrow from '../assets/img/arrow.png';
 
 function Location(props) {
   return (
@@ -16,6 +17,10 @@ function Location(props) {
             <p><span className="open-mat">Open Mat:</span> {props.day} <span className="divider">| </span>{props.hours}</p>
           </div>
         </Link>
+       
+        </div>
+        <div className="arrow-bar">
+          <img src={Arrow} />
         </div>
       </div>
     </div>

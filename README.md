@@ -17,15 +17,12 @@ In the world of jiu jitsu, to "roll" with someone means live sparring, which is 
 ## Technologies Used
 
   * _React 16.8.6_
-  * _React-Redux 7.1.0_
   * _Webpack 3.12.0_
   * _React-Hot-Loader 3.1.3_
   * _Babel 6.26.3_
   * _eslint 4.19.1_
   * _Material UI 4.0.0-rc.0_
   * _JSX_
-  * _GraphQL_
-  * _Firebase_
 
   ## Setup / Installation Requirements
 
@@ -36,7 +33,8 @@ In the world of jiu jitsu, to "roll" with someone means live sparring, which is 
   * `atom .` or `code .` Open the repository in a preferred text editor such as Atom or Visual Studio Code.
   * `npm install` This will allow the viewer of this project to have access to the CLI (command line interface) for webpack.
   * `npm run start` in the project directory in Terminal. 
-  * Go to http://localhost:8080/ in the browser, preferably Google Chrome.
+  * Developed for mobile so best viewed in 375px - 414px. <em>Desktop version coming soon!</em>
+  * Go to http://localhost:3000/ in the browser, preferably Google Chrome.
   * Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
 # Planning
@@ -66,8 +64,9 @@ In the world of jiu jitsu, to "roll" with someone means live sparring, which is 
 
 ## Wireframming
 <p>
-<img src="src/assets/img/wireframe1.png" align="center">
-<img src="src/assets/img/wireframe2.png" align="center">
+<img src="src/assets/img/wireframe1.png" height="450" width="auto" align="center">
+<img src="src/assets/img/wireframe2.png" height="450" width="auto" align="center">
+<img src="src/assets/img/wireframe3.png" height="450" width="auto" align="center">
 </p>
 
 ### Minimum Viable Product

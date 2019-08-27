@@ -1,15 +1,15 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Input from "@material-ui/core/Input";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Input from '@material-ui/core/Input';
 
 const useStyles = makeStyles(theme => ({
   container: {
-    display: "flex",
-    flexWrap: "wrap"
+    display: 'flex',
+    flexWrap: 'wrap',
   },
   input: {
-    margin: theme.spacing(1)
-  }
+    margin: theme.spacing(1),
+  },
 }));
 
 export default function Inputs() {
@@ -21,7 +21,7 @@ export default function Inputs() {
         placeholder="zip code"
         className={classes.input}
         inputProps={{
-          "aria-label": "Description"
+          'aria-label': 'Description',
         }}
       />
     </div>

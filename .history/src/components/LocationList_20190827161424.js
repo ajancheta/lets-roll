@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "../css/LocationList.css";
-import Navbar from "./Navbar";
-import Location from "./Location";
-import BJJPhoto from "../assets/img/explore.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../css/LocationList.css';
+import Navbar from './Navbar';
+import Location from './Location';
+import BJJPhoto from '../assets/img/explore.png';
 
 function LocationList(props) {
   return (
